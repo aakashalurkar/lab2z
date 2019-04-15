@@ -1,0 +1,51 @@
+URL: http://localhost:8080/employee
+
+Request body:
+{
+	"name":"medha",
+	"email":"pranzpatel@gmail.com",
+	"title": "Developer",
+	"address": {
+		"street" : "San Fernando",
+		"city": "San Jose",
+		"state" : "CA",
+		"zip" : "95126"
+	},
+	"employers" : {
+		"id" : "53",
+		"name" : "Google",
+		"description" : "Technology Company",
+		"address" : {
+			"street" : "San Fernando",
+			"city": "San Jose",
+			"state" : "CA",
+			"zip" : "95126"
+		}
+	}
+}
+
+Expected output:
+
+{
+    "id": 63,
+    "name": "medha",
+    "email": "pranzpatel@gmail.com",
+    "title": "Developer",
+    "employers": {
+        "id": 53,
+        "name": "Google",
+        "description": "Technology Company",
+        "address": {
+            "street": "San Fernando",
+            "city": "San Jose",
+            "state": "CA",
+            "zip": "95126"
+        }
+    },
+    "address": {
+        "street": "San Fernando",
+        "city": "San Jose",
+        "state": "CA",
+        "zip": "95126"
+    }
+}
